@@ -1,9 +1,12 @@
 import React from 'react';
+import WorkoutContextProvider from './contexts/WorkoutContext';
 import Navbar from './components/Navbar';
 function App() {
   return (
     <div className='App'>
-      <Navbar />
+      <WorkoutContextProvider>
+        <Navbar />
+      </WorkoutContextProvider>
     </div>
   );
 }
