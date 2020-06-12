@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/workout_checklist/static/css/main.5f361e03.chunk.css",
+    "main.js": "/workout_checklist/static/js/main.7c1a9d93.chunk.js",
+    "main.js.map": "/workout_checklist/static/js/main.7c1a9d93.chunk.js.map",
+    "runtime-main.js": "/workout_checklist/static/js/runtime-main.72fb8e7e.js",
+    "runtime-main.js.map": "/workout_checklist/static/js/runtime-main.72fb8e7e.js.map",
+    "static/js/2.2218d596.chunk.js": "/workout_checklist/static/js/2.2218d596.chunk.js",
+    "static/js/2.2218d596.chunk.js.map": "/workout_checklist/static/js/2.2218d596.chunk.js.map",
+    "index.html": "/workout_checklist/index.html",
+    "precache-manifest.caa1b8c01cf5bb2a79d81eefc2e76b1c.js": "/workout_checklist/precache-manifest.caa1b8c01cf5bb2a79d81eefc2e76b1c.js",
+    "service-worker.js": "/workout_checklist/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/workout_checklist/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.2218d596.chunk.js.LICENSE.txt": "/workout_checklist/static/js/2.2218d596.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/workout_checklist/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72fb8e7e.js",
+    "static/js/2.2218d596.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.7c1a9d93.chunk.js"
+  ]
+}
