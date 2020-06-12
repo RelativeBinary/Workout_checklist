@@ -1,16 +1,41 @@
 import React, { createContext, useReducer, useEffect } from 'react';
 import { workoutReducer } from '../reducers/workoutReducer';
+import { myWorkouts } from '../data/myWorkouts';
 
 export const WorkoutContext = createContext();
 
 const WorkoutContextProvider = (props) => {
-  const [workouts, dispatch] = useReducer(workoutReducer, [], () => {
-    const localData = localStorage.getItem('workouts');
-    return localData ? JSON.parse(localData) : [];
-  });
+  console.log(myWorkouts);
+  const [workouts, dispatch] = useReducer(
+    workoutReducer,
+    [...myWorkouts],
+    () => {
+      const localData = localStorage.getItem('workouts');
+      return localData ? JSON.parse(localData) : [];
+    }
+  );
 
+  //save to local storage
   useEffect(() => {
     localStorage.setItem('workouts', JSON.stringify(workouts));
+  }, [workouts]);
+
+  //check if all workouts have been completed
+  useEffect(() => {
+    let workoutsComplete = true;
+    for (let i = 0; i < workouts.length; i++) {
+      if (workouts[i].checked === false) {
+        workoutsComplete = false;
+        break;
+      }
+    }
+
+    if (workoutsComplete === true && workouts.length > 0) {
+      alert('Great Work! Remember Strength Comes From Within!');
+      for (let i = 0; i < workouts.length; i++) {
+        dispatch({ type: 'CHECK_WORKOUT', id: workouts[i].id });
+      }
+    }
   }, [workouts]);
 
   return (
