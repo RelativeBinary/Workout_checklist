@@ -9,13 +9,26 @@ const WorkoutDetails = ({ workout }) => {
   };
   return (
     <li>
-      <span onClick={handleUpdate}>
-        <div>{workout.title}</div>
-        <div>{workout.desc}</div>
-        <div>{workout.checked ? 'true' : 'false'}</div>
+      <span>
+        <div className='title'>{workout.title}</div>
+        <div className='desc'>{workout.desc}</div>
+        <div className={workout.checked ? 'checked' : ''}>
+          {workout.checked ? 'true' : 'false'}
+        </div>
       </span>
-      <div onClick={() => dispatch({ type: 'REMOVE_WORKOUT', id: workout.id })}>
-        REMOVE
+      <div className='container'>
+        <div
+          className='done'
+          onClick={() => dispatch({ type: 'CHECK_WORKOUT', id: workout.id })}
+        >
+          DONE
+        </div>
+        <div
+          className='remove'
+          onClick={() => dispatch({ type: 'REMOVE_WORKOUT', id: workout.id })}
+        >
+          REMOVE
+        </div>
       </div>
     </li>
   );
