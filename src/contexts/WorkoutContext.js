@@ -31,7 +31,8 @@ const WorkoutContextProvider = (props) => {
     }
 
     if (workoutsComplete === true && workouts.length > 0) {
-      alert('Great Work! Remember Strength Comes From Within!');
+      //move logic to the reducer
+      alert('Great Work! Keep It Up! Proud Of You!');
       for (let i = 0; i < workouts.length; i++) {
         dispatch({ type: 'CHECK_WORKOUT', id: workouts[i].id });
       }
