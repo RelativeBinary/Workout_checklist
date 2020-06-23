@@ -43,11 +43,6 @@ code {
   transition: background 0.2s ease-in-out;
 }
 
-.workout-list li:hover {
-  opacity: 0.7;
-  background: rgb(0, 209, 105);
-}
-
 .workout-list .title {
   font-weight: bold;
   color: #eee;
@@ -90,13 +85,7 @@ input[type='text'] {
 input[type='submit'] {
   margin: 10px auto;
   background: #eee;
-  transition: background 0.2s ease-in-out;
   border: 0;
   padding: 6px 20px;
   display: block;
-}
-
-input[type='submit']:hover {
-  opacity: 0.7;
-  background: rgb(0, 209, 105);
 }
