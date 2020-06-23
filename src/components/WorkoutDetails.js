@@ -8,13 +8,10 @@ const WorkoutDetails = ({ workout }) => {
     dispatch({ type: 'CHECK_WORKOUT', id: workout.id });
   };
   return (
-    <li>
+    <li className={workout.checked ? 'checked' : ''}>
       <span>
         <div className='title'>{workout.title}</div>
         <div className='desc'>{workout.desc}</div>
-        <div className={workout.checked ? 'checked' : ''}>
-          {workout.checked ? 'true' : 'false'}
-        </div>
       </span>
       <div className='container'>
         <div

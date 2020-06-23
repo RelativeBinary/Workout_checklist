@@ -15,19 +15,18 @@ const NewWorkoutForm = () => {
     <form onSubmit={handleSubmit}>
       <input
         type='text'
-        placeholder='workout title'
+        placeholder='Excercise title'
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         required
       />
       <input
         type='text'
-        placeholder='workout description'
+        placeholder='Excercise description'
         value={desc}
         onChange={(e) => setDesc(e.target.value)}
-        required
       />
-      <input type='submit' value='add workout' />
+      <input type='submit' value='Add Exercise' />
     </form>
   );
 };
