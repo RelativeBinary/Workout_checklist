@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/workout_checklist/static/css/main.6825d3a7.chunk.css",
+    "main.css": "/workout_checklist/static/css/main.8d902bf9.chunk.css",
     "main.js": "/workout_checklist/static/js/main.e8caad20.chunk.js",
     "main.js.map": "/workout_checklist/static/js/main.e8caad20.chunk.js.map",
     "runtime-main.js": "/workout_checklist/static/js/runtime-main.72fb8e7e.js",
@@ -8,15 +8,15 @@
     "static/js/2.146f5c5e.chunk.js": "/workout_checklist/static/js/2.146f5c5e.chunk.js",
     "static/js/2.146f5c5e.chunk.js.map": "/workout_checklist/static/js/2.146f5c5e.chunk.js.map",
     "index.html": "/workout_checklist/index.html",
-    "precache-manifest.3d815b2d1934521e01356196c2f1cdaa.js": "/workout_checklist/precache-manifest.3d815b2d1934521e01356196c2f1cdaa.js",
+    "precache-manifest.d5c4b26f5bc1bf011e2e7b09de7f544a.js": "/workout_checklist/precache-manifest.d5c4b26f5bc1bf011e2e7b09de7f544a.js",
     "service-worker.js": "/workout_checklist/service-worker.js",
-    "static/css/main.6825d3a7.chunk.css.map": "/workout_checklist/static/css/main.6825d3a7.chunk.css.map",
+    "static/css/main.8d902bf9.chunk.css.map": "/workout_checklist/static/css/main.8d902bf9.chunk.css.map",
     "static/js/2.146f5c5e.chunk.js.LICENSE.txt": "/workout_checklist/static/js/2.146f5c5e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.72fb8e7e.js",
     "static/js/2.146f5c5e.chunk.js",
-    "static/css/main.6825d3a7.chunk.css",
+    "static/css/main.8d902bf9.chunk.css",
     "static/js/main.e8caad20.chunk.js"
   ]
 }
