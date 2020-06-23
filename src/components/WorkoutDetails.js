@@ -3,10 +3,7 @@ import { WorkoutContext } from '../contexts/WorkoutContext';
 
 const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useContext(WorkoutContext);
-  const handleUpdate = (e) => {
-    e.preventDefault();
-    dispatch({ type: 'CHECK_WORKOUT', id: workout.id });
-  };
+
   return (
     <li className={workout.checked ? 'checked' : ''}>
       <span>
