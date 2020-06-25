@@ -25,15 +25,44 @@ export default function WorkoutDoneModal() {
     }
   }, [workouts]);
 
+  const customStyles = {
+    content: {
+      background: '#666666',
+    },
+  };
+
   return (
     <div>
       <Modal
         isOpen={isModalOpen}
         shouldCloseOnOverlayClick={true}
         onRequestClose={() => setIsModalOpen(false)}
+        style={{
+          overlay: {
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(255, 255, 255, 0.75)',
+          },
+          content: {
+            backgroundColor: '#454544',
+            textAlign: 'center',
+            maxHeight: '50%',
+            color: 'white',
+          },
+        }}
       >
-        <h2>This is a modal</h2>
-        <button onClick={() => setIsModalOpen(false)}>Close Modal</button>
+        <div>
+          <h2 className='neon'>Great Work!</h2>
+          <button
+            className='modal-button'
+            onClick={() => setIsModalOpen(false)}
+          >
+            Close Modal
+          </button>
+        </div>
       </Modal>
     </div>
   );
